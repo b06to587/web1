@@ -4,29 +4,16 @@
 <head>
   <title>Web1 - html</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="color.js"></script>
 </head>
 
 <body>
-  <input type="button" value="night" onclick="
-    var target =   document.querySelector('body');
-    var target2 = document.querySelector('a');
-    if(this.value === 'night'){
-      target.style.backgroundColor='black';
-      target.style.color='white';
-      target2.style.color='white';
-      this.value ='day';
-    }
-    else{
-      target.style.backgroundColor='white';
-      target.style.color='black';
-      target2.style.color='black ';
-      this.value ='night';
-    }
-  ">
+  <input type="button" value="night" onclick="nightdayHandler(this);">
     <h1><a href="index.html">WEB</a>
   </h1>
-  <div id="grid">
+<div id="grid">
 <ol id="first">
   <li><a href="1.html">HTML</a></li>
   <li><a href="2.html">CSS</a></li>
